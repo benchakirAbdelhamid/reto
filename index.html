@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+
+  <!-- --------- Scroll Reveal Library --------- -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- --------- Swiper Library --------- -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
+
+  <!-- --------- Unicons Icons ===> https://iconscout.com/unicons --------- -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!-- --------- CSS Files --------- -->
+  <link rel="stylesheet" href="css/generalStyle.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/loading.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+
+  <link rel="stylesheet" href="css/showcase-area.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/service.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/Testimonials.css">
+  <link rel="stylesheet" href="css/Contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- test font drop down -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- box icon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+</head>
+
+<!-- <body> -->
+
+<body class="dark">
+
+  <!-- overlay -->
+  <div class="overlay"></div>
+  <!-- custom cursors  -->
+  <div class="cursor-1"></div>
+  <div class="cursor-2"></div>
+
+  <!-- --------- Navbar --------- -->
+  <header>
+    <nav class="container">
+      <a href="#" class="logo">Portf <span>olio.</span></a>
+      <div class="links">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+
+        <!-- button dark mode -->
+        <i class="uil uil-moon toggle-btn"></i>
+      </div>
+
+
+      <div class="hamburger">
+        <button class="menu" aria-label="Main Menu">
+          <svg width="55" viewBox="0 0 100 100">
+            <path class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+
+      </div>
+
+
+
+    </nav>
+
+
+
+
+
+
+    <!-- .................................... -->
+    <div class="scroll-indicator-container">
+      <div class="scroll-indicator-bar"></div>
+    </div>
+  </header>
+
+  <main>
+
+
+
+
+
+    <section class="showcase-area section" id="home">
+      <div class="parent-color-home">
+        <!-- ======= start drop down language=========== -->
+        <div class="btn-language">
+          <div class="navBtnContainer">
+            <button type="button" class="navBtn mouseLink contentLeft">
+              <img src="assets/translation (1).png" alt="">
+            </button>
+            <div class="navBtnItems">
+              <a href="#" class="navItem mouseLink" data-nav-en="Home">
+                <b class="animateText">
+                  <button id="mybutton" type="button" class="btn-en">EN</button>
+                </b>
+              </a>
+              <a href="#" class="navItem mouseLink" data-nav-en="About">
+                <b class="animateText">
+                  <button type="button" class="btn-fr">FR</button>
+                </b>
+              </a>
+              <a href="#" class="navItem mouseLink" data-nav-en="Work">
+                <b class="animateText">
+                  <button type="button" class="btn-ar">AR</button>
+                </b>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--  =======end drop down language=========== -->
+
+        <!-- color -->
+        <div class="color "></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <!-- color -->
+        <!-- box -->
+        <div class="square-box box-square" style="--i:3;"></div>
+        <div class="square-box box-square" style="--i:1;"></div>
+        <!-- box -->
+
+        <img src="assets/square1.png" class="shape square" alt="" />
+        <div class="container">
+          <div class="showcase-info">
+            <h3 class="sub-heading" id="xx">Hello, my name is</h3>
+            <h1 class="heading name">Hamid <br> Benchakir</h1>
+            <p class="my-text">
+              I' m a freelance <span class="typing">web designer</span> <img src="assets/handme.png" alt="">
+            </p>
+            <div class="cta">
+              <a href="mailto:hamidbenchakir@gmail.com" class="btn">Contact me</a>
+              <a href="assets/markusCV.pdf" download class="btn secondary-btn">Download CV</a>
+
+
+
+            </div>
+          </div>
+          <div class="showcase-image">
+            <figure class="hero-banner has-before">
+              <img src="assets/2.jpg" class="img-cover" />
+            </figure>
+
+            <div class="social">
+              <div class="social_container">
+
+                <div class="my_social">
+                  <div class="social_content">
+                    <a href="#">
+                      <i class='bx bxl-facebook-circle social_icon'></i>
+                    </a>
+                    <div class="social_tooltip social_tooltip-left">facebook</div>
+                  </div>
+                </div>
+
+                <div class="my_social">
+                  <div class="social_content">
+                    <a href="#">
+                      <i class='bx bxl-instagram-alt social_icon'></i>
+                    </a>
+                    <div class="social_tooltip social_tooltip-top">instagram</div>
+                  </div>
+                </div>
+
+                <div class="my_social">
+                  <div class="social_content">
+                    <a href="#">
+                      <i class='bx bxl-twitter social_icon'></i>
+                    </a>
+                    <div class="social_tooltip social_tooltip-top">twitter</div>
+                  </div>
+                </div>
+
+                <div class="my_social">
+                  <div class="social_content">
+                    <a href="#">
+                      <i class='bx bxl-github social_icon'></i>
+                    </a>
+                    <div class="social_tooltip social_tooltip-top">github</div>
+                  </div>
+                </div>
+
+                <div class="my_social">
+                  <div class="social_content">
+                    <a href="#">
+                      <i class='bx bxl-linkedin social_icon'></i>
+                    </a>
+                    <div class="social_tooltip social_tooltip-right">linkedin</div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <img src="assets/circle1.png" class="shape circle" alt="" />
+            <img src="assets/dots.png " class="shape dots" alt="" />
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------- About Section --------- -->
+    <section class="about section" id="about">
+      <div class="parent-color-about">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <!-- box -->
+        <div class="square-box1 box-square" style="--i:3;"></div>
+        <div class="square-box1 box-square" style="--i:1;"></div>
+        <div class="square-box2 box-square" style="--i:1;"></div>
+        <!-- box -->
+        <img src="assets/triangle.png" class="shape triangle" alt="" />
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-card">
+              <i class='bx bxl-html5 icon-about'></i>
+              <i class='bx bxl-bootstrap icon-about'></i>
+              <i class='bx bxl-figma icon-about'></i>
+            </div>
+
+            <div class="about-card">
+              <i class='bx bxl-react icon-about'></i>
+              <i class='bx bxl-tailwind-css icon-about'></i>
+              <i class='bx bx-code-alt icon-about'></i>
+            </div>
+
+            <div class="about-card">
+              <i class='bx bxl-css3 icon-about'></i>
+              <i class='bx bxl-php icon-about'></i>
+              <i class='bx bx-code icon-about'></i>
+            </div>
+
+            <div class="about-card">
+              <i class='bx bxl-javascript icon-about'></i>
+              <i class='bx bxl-sass icon-about'></i>
+              <i class="fa-brands fa-laravel icon-about"></i>
+            </div>
+          </div>
+          <div class="about-info">
+            <h3 class="sub-heading">About me</h3>
+            <h1 class="heading">
+              Better design <br />
+              better experiences
+            </h1>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+              reprehenderit velit, modi dolorum voluptatem perferendis voluptas.
+              Molestiae cum veniam sunt deleniti? Architecto est modi obcaecati
+              consequatur reiciendis nostrum rerum dicta?
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------- Services Section --------- -->
+
+    <section class="services section" id="services">
+      <div class="parent-color-service">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <!-- box -->
+        <div class="square-box3 box-square" style="--i:3;"></div>
+        <div class="square-box4 box-square" style="--i:1;"></div>
+        <!-- box -->
+        <div class="container">
+          <div class="services-info">
+            <h3 class="sub-heading">My services</h3>
+
+            <div class="services-card">
+              <section class="service  " id="services">
+                <div class="container">
+
+
+
+
+
+
+                  <div class="row">
+
+                    <!-- === Services item Start ===-->
+                    <div class="service-item padd-15">
+                      <div class="service-item-inner">
+                        <div class="icon">
+                          <i class="fa fa-mobile-alt"></i>
+                        </div>
+                        <h4>Frontend Developer</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facere possimus a.</p>
+                      </div>
+                    </div>
+                    <!-- === Services item End -->
+
+                    <!-- === Services item Start ===-->
+                    <div class="service-item padd-15">
+                      <div class="service-item-inner">
+                        <div class="icon">
+                          <i class="fa fa-laptop-code"></i>
+                        </div>
+                        <h4>Backend Developer</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facere possimus a.</p>
+                      </div>
+                    </div>
+                    <!-- === Services item End -->
+
+                    <!-- === Services item Start ===-->
+                    <div class="service-item padd-15">
+                      <div class="service-item-inner">
+                        <div class="icon">
+                          <i class="fa fa-palette "></i>
+                        </div>
+                        <h4>UI/Ux Design</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facere possimus a.</p>
+                      </div>
+                    </div>
+                    <!-- === Services item End -->
+
+                  </div>
+                </div>
+              </section>
+
+            </div>
+
+            <div class="milestones">
+              <div class="ml">
+                <h2 class="number"><span>2</span>+</h2>
+                <h5>Years</h5>
+              </div>
+              <div class="ml">
+                <h2 class="number"><span>16</span>+</h2>
+                <h5>Projects</h5>
+              </div>
+              <div class="ml">
+                <h2 class="number"><span>5</span>+</h2>
+                <h5>Client</h5>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --------- Portfolio Section --------- -->
+
+    <section class="portfolio section" id="portfolio">
+      <div class="parent-color-portfolio">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <!-- box -->
+        <div class="square-box5 box-square" style="--i:3;"></div>
+        <div class="square-box6 box-square" style="--i:1;"></div>
+        <div class="square-box7 box-square" style="--i:5;"></div>
+        <div class="square-box8 box-square" style="--i:5;"></div>
+        <div class="square-box9 box-square" style="--i:5;"></div>
+        <!-- box -->
+        <div class="modal">
+          <div class="modal-overlay"></div>
+          <div class="slider-wrap">
+            <div class="prev-btn navigation">
+              <i class="uil uil-angle-left-b"></i>
+            </div>
+            <div class="images">
+              <img class="showImage" src="assets/port1.jpg" />
+              <img src="assets/port2.png" />
+              <img src="assets/port3.jpg" />
+              <img src="assets/port4.png" />
+              <img src="assets/port5.png" />
+              <img src="assets/port6.jpg" />
+            </div>
+            <div class="next-btn navigation">
+              <i class="uil uil-angle-right-b"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="portfolio-header">
+            <div class="portfolio-title">
+              <h3 class="sub-heading">Portfolio</h3>
+              <h3 class="heading">Latest Projects</h3>
+            </div>
+            <div class="filter-btns">
+              <button class="filter-btn" data-filter="all">All</button>
+              <button class="filter-btn" data-filter=".product">Product</button>
+              <button class="filter-btn" data-filter=".inter">
+                Interacting
+              </button>
+              <button class="filter-btn" data-filter=".web">Web App</button>
+            </div>
+          </div>
+          <div class="portfolio-gallery">
+            <div class="mix prt-card inter">
+              <div class="prt-image">
+                <img src="assets/port1.jpg" alt="" />
+                <div class="prt-overlay">
+                  <span class="prt-icon zoom_icon" style="--i: 0s">
+                    <i class="uil uil-search-plus"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>Olido interaction</h3>
+                <a href="#" class="btn secondary-btn sm">Read more</a>
+              </div>
+            </div>
+
+            <div class="mix prt-card product">
+              <div class="prt-image">
+                <img src="assets/port2.png" alt="" />
+                <div class="prt-overlay">
+                  <span class="prt-icon zoom_icon" style="--i: 0s">
+                    <i class="uil uil-search-plus"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>John product design</h3>
+                <a href="#" class="btn secondary-btn sm">Read more</a>
+              </div>
+            </div>
+
+            <div class="mix prt-card web">
+              <div class="prt-image">
+                <img src="assets/port3.jpg" alt="" />
+                <div class="prt-overlay">
+                  <span class="prt-icon zoom_icon" style="--i: 0s">
+                    <i class="uil uil-search-plus"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>Meta web design</h3>
+                <a href="#" class="btn secondary-btn sm">Read more</a>
+              </div>
+            </div>
+
+            <div class="mix prt-card web">
+              <div class="prt-image">
+                <img src="assets/port4.png" alt="" />
+                <div class="prt-overlay">
+                  <span class="prt-icon zoom_icon" style="--i: 0s">
+                    <i class="uil uil-search-plus"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>TwitUp web design</h3>
+                <a href="#" class="btn secondary-btn sm">Read more</a>
+              </div>
+            </div>
+
+            <div class="mix prt-card inter">
+              <div class="prt-image">
+                <img src="assets/port5.png" alt="" />
+                <div class="prt-overlay">
+                  <span class="prt-icon zoom_icon" style="--i: 0s">
+                    <i class="uil uil-search-plus"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>Markus interaction</h3>
+                <a href="#" class="btn secondary-btn sm">Read more</a>
+              </div>
+            </div>
+
+            <div class="mix prt-card product">
+              <div class="prt-image">
+                <img src="assets/port6.jpg" alt="" />
+                <div class="prt-overlay">
+                  <span class="prt-icon zoom_icon" style="--i: 0s">
+                    <i class="uil uil-search-plus"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>Demga web design</h3>
+                <a href="#" class="btn secondary-btn sm">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------- Testimonials Section --------- -->
+
+    <section class="testimonials section">
+      <div class="parent-color-client">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <!-- box -->
+        <div class="square-box10 box-square" style="--i:5;"></div>
+        <div class="square-box11 box-square" style="--i:5;"></div>
+        <div class="square-box11 box-square" style="--i:2;"></div>
+        <div class="container">
+          <div class="section-background">
+            <!-- <img src="assets/Screenshot 2022-09-25 1601141.png" class="person" alt="" /> -->
+            <img src="assets/circle2.png" alt="" class="circle" />
+            <img src="assets/square1.png" alt="" class="square" />
+          </div>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="client">
+                  <img src="assets/client1.png" alt="" />
+                  <div class="client-info">
+                    <h4>Mr. Zakaria Imzilen </h4>
+                    <h5><a href="#">Entrepreneur Présence Digital</a></h5>
+                  </div>
+                </div>
+                <q class="text">
+                  Hamid is the type of person who got the project tasks and go execute on them no matter how hard the
+                  way it is.
+                  It was my pleasure to work with you Hamid.
+                </q>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="client">
+                  <img src="assets/client2.jpeg" alt="" />
+                  <div class="client-info">
+                    <h4>Karim Najib</h4>
+                    <h5><a href="#">Freelance Desinger</a></h5>
+                  </div>
+                </div>
+                <q class="text">
+                  Ravi de traiter avec vous . J'ai aimé votre professionnalisme au travail et la façon dont vous traitez
+                  vos clients .
+                </q>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="client">
+                  <img src="assets/client3.jpeg" alt="" />
+                  <div class="client-info">
+                    <h4>Yasmine Badra</h4>
+                    <h5><a href="#">Commercant</a></h5>
+                  </div>
+                </div>
+                <q class="text" dir="rtl" style="font-size: 20px;">بصراحة أحببت عملك وإلتزامك بالوقت المحدد من أجل
+                  تسليمك مشروعي وسعيدة بالتعامل
+                  معاك</q>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="testimonials-title">
+            <h3 class="sub-heading">Testimonials</h3>
+            <h1 class="heading text_testimonials">
+              Hear from my happy clients
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------- Contact Section --------- -->
+
+    <section class="contact section" id="contact">
+      <div class="parent-color-contact">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <!-- box -->
+        <div class="square-box12 box-square" style="--i:5;"></div>
+        <div class="square-box13 box-square" style="--i:2;"></div>
+        <img src="assets/triangle.png" alt="" class="shape triangle" />
+        <div class="container ">
+          <img src="assets/square2.png" alt="" class="shape square" />
+          <div class="contact-info">
+            <h3 class="sub-heading">Contact me</h3>
+            <h1 class="heading">Let’s chat ! </h1>
+            <p class="text">
+              If you have a project in mind or a freelance contract enquiry,
+              and want to know more about my process and pricing,
+              feel free to get in touch by email. I usually respond within 24h.
+            </p>
+            <div class="my-contact">
+              <a href="mailto:hamidbenchakir@gmail.com" class="mail">
+                <i class="fa-solid fa-envelope"></i> hamidbenchakir@gmail.com <i class="uil uil-arrow-right"></i>
+              </a>
+              <br>
+              <a href="mailto:hamidbenchakir@gmail.com" class="mail">
+                <i class="fa-sharp fa-solid fa-phone-volume"></i> +212767109549
+              </a>
+            </div>
+          </div>
+
+
+
+          <div class="box">
+            <div class="square box-square" style="--i:0;"></div>
+            <div class="square box-square" style="--i:1;"></div>
+            <div class="square box-square" style="--i:2;"></div>
+            <div class="square box-square" style="--i:3;"></div>
+            <div class="square box-square" style="--i:4;"></div>
+            <form action="index.html" class="contact-form">
+              <input type="text" class="form-input" placeholder="Your Name" required />
+              <input type="email" class="form-input" placeholder="Your Email" required />
+              <textarea class="form-input" placeholder="Project Details" required></textarea>
+
+              <div class="inputBox">
+
+                <button class="btn-send">Send
+                </button>
+
+              </div>
+
+            </form>
+
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --------- Subscription Section --------- -->
+  </main>
+
+  <footer>
+
+    <div class="parent_footer">
+      <svg class="footer_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#5000ca" fill-opacity="1"
+          d="M0,32L60,80C120,128,240,224,360,224C480,224,600,128,720,112C840,96,960,160,1080,176C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        </path>
+      </svg>
+      <div class="container">
+        <section class="section_test">
+          <ul class="section_ul">
+            <li class="section_li">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="section_li">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="section_li">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="section_li">
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li class="section_li">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <div class="base">
+    <div class="child-base"></div>
+    <div class="child-base"></div>
+    <div class="child-base"></div>
+    <div class="child-base"></div>
+    <div class="child-base"></div>
+    <div class="child-base"></div>
+    <div class="child-base"></div>
+    <div class="child-base"></div>
+
+  </div>
+
+
+
+  <!-- loading -->
+  <div class="wrapper">
+    <div class="loader"></div>
+  </div>
+
+
+
+  <!--=============== SCROLL UP ===============-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <img style="width: 50px;" src="assets/up-arrow1.png" alt="">
+  </a>
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- JavaScript Files -->
+  <script src="js/mixitup.min.js"></script>
+
+  <!-- typed js animation <typing = text> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
+  <script>
+
+  </script>
+
+  <script src="js/loadingScrooll.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/language.js"></script>
+
+
+</body>
+
+</html>

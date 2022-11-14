@@ -1,0 +1,72 @@
+/* loading  */
+
+
+/* background load */
+.wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-image: linear-gradient(-70deg, rgba(113, 6, 185, 0.619), rgba(0, 0, 255, 0.34));
+    display: grid;
+    place-items: center;
+    transition: opacity .5s, visibility 1s;
+    backdrop-filter: blur(5px);
+}
+
+.fade {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+.loader {
+    border: 16px solid #7949ff;
+    border-radius: 50%;
+    border-top: 16px solid #ddcb01;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: absolute;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+    position: fixed;
+    right: 1.5rem;
+    bottom: -30%;
+    display: inline-flex;
+    z-index: 1;
+    opacity: .8;
+    transition: 1.2s;
+}
+
+.scrollup:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.scrollup__icon {
+    font-size: 1.6rem;
+    color: hsl(31, 100%, 70%);
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+    bottom: 3rem;
+}

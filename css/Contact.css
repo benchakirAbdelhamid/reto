@@ -1,0 +1,229 @@
+/* --------------- Contact Section Styling --------------- */
+.contact .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    padding: 0rem 1.5rem;
+}
+
+
+.mail {
+    color: var(--t);
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: .3s;
+    z-index: 1000;
+    /* font-family: font_ChelaOne; */
+    font-family: font_TitanOne;
+}
+
+.mail i {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 2px;
+    transform: translateY(3px);
+    transition: .3s margin-left;
+}
+
+.mail:hover {
+    color: #6202c3;
+}
+
+.mail:hover i {
+    margin-left: 10px;
+}
+
+/* ====================================== */
+.contact-form {
+    padding: 3rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    transition: .3s background-color;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px var(--box-sadow);
+    border: 1px solid var(--box-border);
+    border-right: 1px solid var(--box-border-right);
+    border-bottom: 1px solid var(--box-border-bottom);
+    background: var(--box-background);
+    font-family: font_TitanOne;
+}
+
+
+.form-input {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--title-service);
+    outline: none;
+    border: none;
+    background: var(--box-background);
+    transition: 0.3s;
+    border: 1px solid var(--box-border);
+    border-right: 1px solid var(--box-border-right);
+    border-bottom: 1px solid var(--box-border-bottom);
+    box-shadow: 0 5px 15px var(--box-shadow);
+    border-radius: 35px;
+}
+
+
+
+.form-input::placeholder {
+    color: var(--c);
+}
+
+.form-input:hover {
+    filter: brightness(97%);
+}
+
+.form-input:valid,
+.form-input:focus {
+    filter: brightness(100%);
+    border-color: rgb(188, 168, 237);
+    box-shadow: 0 0 1px 1px var(--boxshadow-input);
+}
+
+textarea.form-input {
+    resize: none;
+    min-height: 170px;
+}
+
+.contact-form .form-input {
+    margin-bottom: 1.5rem;
+}
+
+.contact .square {
+    position: absolute;
+    left: 15%;
+    bottom: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.contact .triangle {
+    position: absolute;
+    left: 90%;
+    top: 98%;
+    transform: translate(-50%, -50%);
+}
+
+/*======================== mybutton send form */
+
+.btn-send {
+    padding: 20px 50px;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 35px;
+    color: var(--title-service);
+    background: var(--box-background);
+    border: 1px solid var(--box-border);
+    border-right: 1px solid var(--box-border-right);
+    border-bottom: 1px solid var(--box-border-bottom);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: font_TitanOne;
+}
+
+
+
+body.dark .form-input:hover {
+    filter: brightness(100%);
+}
+
+@media (max-width: 1000px) {
+    .contact .container {
+        column-gap: 2.5rem;
+        /* border: 1px solid red; */
+    }
+
+    .contact-form {
+        padding: 2.5rem 2rem;
+    }
+
+    .contact-form h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact .form-input {
+        margin-bottom: 0.8rem;
+    }
+
+    .form-input {
+        padding: .8rem 1.45rem;
+        border-radius: 15px;
+        font-size: 0.8rem;
+    }
+
+    .btn-send {
+        padding: 15px 40px;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .contact .container {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .contact .square {
+        width: 60px;
+        bottom: 68%;
+        left: 75%;
+    }
+
+    .contact .triangle {
+        left: 20%;
+        top: 101%;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .contact-form p {
+        font-size: 1.2rem;
+    }
+
+    .contact-form {
+        padding: 2.5rem 2rem 2.5rem 2rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .contact-form {
+        padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+
+    .btn-send {
+        padding: 12px 35px;
+        font-size: 16px;
+    }
+
+    .contact .box .square {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mail {
+        font-size: .9rem;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .contact-form {
+        padding: 1.5rem 1rem 1.5rem 1rem;
+    }
+
+    .contact .container {
+        padding: 0rem .5rem;
+    }
+}
